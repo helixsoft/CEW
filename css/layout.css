@@ -46,13 +46,47 @@
 		copy your FontName into code below and remove
 		comment brackets */
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa-bold-webfont.svg#nexa_boldregular') format('svg'),
+         url('../fonts/nexa-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa-bold-webfont.woff') format('woff'),
+         url('../fonts/nexa-bold-webfont.ttf') format('truetype'),
+         url('../fonts/nexa-bold-webfont.eot');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa-light-webfont.svg#nexa_lightregular') format('svg'),
+         url('../fonts/nexa-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa-light-webfont.woff') format('woff'),
+         url('../fonts/nexa-light-webfont.ttf') format('truetype'),
+         url('../fonts/nexa-light-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tahomaregular';
+    src: url('../fonts/tahoma-webfont.svg#tahomaregular') format('svg'),
+         url('../fonts/tahoma-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tahoma-webfont.woff') format('woff'),
+         url('../fonts/tahoma-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tahomabold';
+    src: url('../fonts/tahomabd-webfont.svg#tahomabold') format('svg'),
+         url('../fonts/tahomabd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tahomabd-webfont.woff') format('woff'),
+         url('../fonts/tahomabd-webfont.ttf') format('truetype');     
+    font-weight: bold;
+    font-style: normal;
+
+}
