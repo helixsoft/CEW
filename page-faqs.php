@@ -5,9 +5,12 @@
  */
 
 get_header(); ?>
+<?php $i=0;$first_post=""; if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if($i==0){$first_post=get_permalink();$i++;} ?>
 <div class="page_name">
-    <div class="container"><div class="sixteen columns"><h1>FAQ</h1></div></div>
+    <div class="container"><div class="sixteen columns"><h1><?php the_title();?></h1></div></div>
 </div>
+<?php endwhile;endif; ?>
 <?php $i=0;$first_post="";?>
 <?php $wp_query_faq = new WP_Query(); ?>
 <?php $wp_query_faq->query('post_type=faqs&posts_per_page=-1&post_status=publish'); ?>
