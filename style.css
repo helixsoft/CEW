@@ -111,6 +111,14 @@ footer p{
 article.blog{
 	margin-top: 1px;
 	border-bottom: 1px solid #a1a1a1;
+	opacity: 0.6;
+	-webkit-transition : opacity 500ms ease-out; 
+  -moz-transition : opacity 500ms ease-out;
+  -o-transition : opacity 500ms ease-out;  
+  transition : opacity 500ms ease-out;
+}
+article.blog:hover{
+	opacity: 1;
 }
 .blog-title{
 	margin-top: 48px;
