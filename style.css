@@ -179,3 +179,45 @@ article.blog{
 	font-size: 60px;
 	line-height: 100px;
 }
+
+.faq-title h1{
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Signika', sans-serif;
+	line-height: 1;
+}
+.faq-title h1 span{
+	color: #e97500;
+	margin-right: 5px;
+	
+}
+.faq-excerpt{
+	font-size: 15px;
+	font-family: 'Signika', sans-serif;
+	line-height: 1;
+	margin-left: 17px;
+}
+.faq-excerpt p{
+	margin-bottom: 0;
+}
+article.faq{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-top:1px solid transparent; 
+	border-bottom: 1px solid transparent;
+	background:#fff;
+	cursor: pointer;
+}
+article.faq:hover{
+	border-top:1px solid #a1a1a1; 
+	border-bottom: 1px solid #a1a1a1;
+	background:#f4f4f4;
+}
+article.faq:hover .faq-title{
+	color: #e97500;
+}
+article.faq:hover .faq-excerpt {
+	color: #609de0;
+}

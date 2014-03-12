@@ -47,6 +47,4 @@
             </div>
         </div>
     </header>
-    <div class="page_name">
-        <div class="container"><div class="sixteen columns"><h1>INDUSTRY NEWS</h1></div></div>
-    </div>
+    

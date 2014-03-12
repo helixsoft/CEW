@@ -4,6 +4,9 @@
  */
 
 get_header();?>
+<div class="page_name">
+    <div class="container"><div class="sixteen columns"><h1>INDUSTRY NEWS</h1></div></div>
+</div>
 <section>
 <?php $i=0;$first_post=""; if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php if($i==0){$first_post=get_permalink();$i++;} ?>
