@@ -12,6 +12,7 @@
                 <div class="offset-by-seven four columns"><p>&copy; 2011 Commitment Engineering Works.</p></div>
             </div>
         </footer>
+         <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true&language=en"></script>
         <script src="<?php echo THEMEROOT?>/js/main.js"></script>
 <?php wp_footer();?>
 </body>
