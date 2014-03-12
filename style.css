@@ -395,3 +395,14 @@ hr.no-margin{
 	border: 1px solid #609de0;
 	box-shadow: none;
 }
+.success-message,
+.alert-message,
+.error-message {
+	display: none;
+	font-family: 'Signika', sans-serif;
+	font-size:12px;
+	letter-spacing:1px;
+	text-align: center;
+	color: #000;
+	margin-top: 30px;
+}

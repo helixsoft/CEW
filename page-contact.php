@@ -50,7 +50,7 @@ get_header(); ?>
 	<div id="map"></div>
 	<div class="container">
 		<div class="sixteen columns">
-			<form class="contact-form">
+			<form id="contact-form" class="contact-form">
 				<h1>Get intouch</h1>
 				<input type="text" name="first_name" placeholder="First Name*" tabindex="1">
 				<input type="text" name="last_name" placeholder="Last Name*" tabindex="2">
@@ -62,10 +62,13 @@ get_header(); ?>
 				<input type="text" name="office" class="small" placeholder="Office" tabindex="7">
 				<input type="text" name="mobile" class="small" placeholder="Mobile" tabindex="8">
 				<input type="text" name="home" class="small" placeholder="Home" tabindex="9">
-				<textarea placeholder="Contact" tabindex="10"></textarea>
+				<textarea  name="contact" placeholder="Contact" tabindex="10"></textarea>
 				<p>*Required Fields</p>
 				<input type="submit" value="Submit" tabindex="11">
 				<input type="reset" value="Reset" tabindex="12">
+				<div class="success-message">Email has been sent!</div>
+                <div class="alert-message"></div>
+                <div class="error-message">Email could not be delivered. Please try again later!</div>
 			</form>
 		</div>
 	</div>
