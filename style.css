@@ -215,7 +215,7 @@ article.faq:hover{
 	border-bottom: 1px solid #a1a1a1;
 	background:#f4f4f4;
 }
-article.faq:hover .faq-title{
+article.faq:hover .faq-title h1{
 	color: #e97500;
 }
 article.faq:hover .faq-excerpt {
