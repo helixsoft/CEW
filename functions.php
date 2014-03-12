@@ -26,3 +26,20 @@ function CEW_setup() {
 }
 
 add_action( 'after_setup_theme', 'CEW_setup' );
+
+function get_vogaye_next_link($html){
+	preg_match('/<a href="(.+)" >/', $html, $match);
+	if(isset($match[1])){
+		$url=$match[1];
+		return $url;
+	}
+}
+function custom_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+	
+function new_excerpt_more( $more ) {
+	return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
