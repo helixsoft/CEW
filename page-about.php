@@ -15,7 +15,7 @@ get_header(); ?>
 		<div class="sixteen columns">
 			<h6 class="about-cew-title">Commitment Engineering Works.</h6>
 			<div class="about-cew-desc"><?php the_content()?></div>
-			<a class="button" href="<?php site_url('/contact/')?>">Contact us</a>
+			<a class="button" href="<?php echo site_url('/contact/')?>">Contact us</a>
 			<hr/>
 			<h6 class="about-cew-division-title">Our Divisions</h6>
 			<nav class="about">
