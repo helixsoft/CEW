@@ -484,7 +484,7 @@ hr.no-margin{
 	border-left: 1px solid #dadada;
 	border-right: 1px solid #dadada;
 	padding: 0 6px; 
-	height: 203px;
+	height: 233px;
 }
 .certifi .item:nth-child(1){
 	border-left: 1px solid #fff;
@@ -521,4 +521,6 @@ hr.no-margin{
 	font-size: 15px;
 	text-align: center;
 	color: #242424;
+	padding: 0 18px;
+	margin-bottom: 0;
 }
