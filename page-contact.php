@@ -81,4 +81,69 @@ get_header(); ?>
 	var fangohr_dynload = {"postType":"post","startPage":"1","maxPages":"<?php echo $wp_query->max_num_pages;;?>","nextLink":"<?php echo get_vogaye_next_link(get_next_posts_link( ''));?>","startPostPage":"1","nextPostPageLink":"<?php echo $first_post?>"};
 	/* ]]> */
 	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+                     
+                  var position     = [25.28100,51.53991];
+                  var marker_url   = "<?php echo IMAGES?>/marker.png";
+                  var marker_w     = 169;
+                  var marker_h     = 206;
+                  var marker_title = "Mapped WordPress Theme Demo";
+
+                  window.onload = mp_initialize_map(position, marker_url,marker_w,marker_h,marker_title);
+
+              }); 
+          function mp_initialize_map (mp_position, mp_marker_url, mp_marker_w, mp_marker_h, mp_marker_title) {
+
+            // fornisce latitudine e longitudine
+            var latlng = new google.maps.LatLng(mp_position[0],mp_position[1]);
+            var marker = new google.maps.MarkerImage(mp_marker_url, new google.maps.Size(mp_marker_w,mp_marker_h), new google.maps.Point(0,0) );
+
+            // imposta le opzioni di visualizzazione
+            var options = {
+                  zoom: 16,
+                  center: latlng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  panControl: true,
+                  zoomControl: true,
+                  mapTypeControl: true,
+                  scaleControl: true,
+                  streetViewControl: true,
+                  overviewMapControl: true,
+                  scrollwheel: false
+            };
+                 
+            // crea l'oggetto mappa
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            var marker = new google.maps.Marker({
+                  position: latlng,
+                  map: map,
+                  icon: marker, 
+                  title: mp_marker_title + " - Click for more informations"
+            });
+
+            var bew = [
+                  {
+                        featureType: "all",
+                        stylers: [
+                               { saturation: -100 }
+                        ]
+                  }
+            ];
+
+            map.setOptions({styles: bew});
+
+            // Marker click event
+            google.maps.event.addListener(marker, 'click', function() {
+                  $('.content-wrap').toggleClass('table , none');
+            })
+
+            // Content click event
+            $('.content').click(function(){
+                  $('.content-wrap').toggleClass('none , table');
+            })
+
+      }
+	</script>
 <?php get_footer();?>
