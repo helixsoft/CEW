@@ -537,7 +537,20 @@ hr.no-margin{
 	border-left:1px solid #dadada;
 	border-right:1px solid #dadada;
 	float: left;
+	cursor: pointer;
+	-webkit-transition :all 500ms ease-out; 
+  -moz-transition :all 500ms ease-out;
+  -o-transition :all 500ms ease-out;  
+  transition :all 500ms ease-out;
 }
+.cew-value-item:hover{
+	background: #609de0;
+}
+.cew-value-item:hover:nth-child(1){
+	background: #ededed;
+	border-right:1px solid #ededed;
+}
+
 .cew-value-item:nth-child(1){
 	border-left:1px solid #ededed;
 	border-right:1px solid #ededed;
@@ -565,6 +578,9 @@ hr.no-margin{
 	border-left:1px solid #dadada;
 	border-right:1px solid #ededed;
 }
+.cew-value-item:hover:nth-child(2),.cew-value-item:hover:nth-child(3),.cew-value-item:hover:nth-child(4),.cew-value-item:hover:nth-child(5),.cew-value-item:hover:nth-child(6){
+	border-right: 1px solid #609de0;
+}
 .cew-value-item h1{
 	color: #e97500;
 	font-size: 56px;
@@ -572,4 +588,69 @@ hr.no-margin{
 	line-height: 1;
 	text-align: center;
 	margin: 68px 0;
+}
+.cew-value-item h2{
+	padding: 0 29px;
+	font-family: 'nexa_boldregular';
+	font-size: 22px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+.cew-value-item h2 span.text{
+	margin-left: 10px;
+	position: relative;
+	top:-10px;
+}
+.cew-value-item h2 span.pawn{
+	width: 30px;
+	height: 64px;
+	background: url(images/chess.png) -39px 0px no-repeat;
+	display: inline-block;
+}
+.cew-value-item:hover h2 span.pawn{
+	background: url(images/chess.png) -39px -71px no-repeat;
+}
+.cew-value-item h2 span.queen{
+	width: 30px;
+	height: 64px;
+	background: url(images/chess.png) -81px 0px no-repeat;
+	display: inline-block;
+}
+.cew-value-item:hover h2 span.queen{
+	background: url(images/chess.png) -81px -71px no-repeat;
+}
+.cew-value-item h2 span.king{
+	width: 30px;
+	height: 64px;
+	background: url(images/chess.png) 0px 0px no-repeat;
+	display: inline-block;
+}
+.cew-value-item:hover h2 span.king{
+	background: url(images/chess.png) 0px -71px no-repeat;
+}
+.cew-value-item h2 span.knight{
+	width: 30px;
+	height: 64px;
+	background: url(images/chess.png) -157px 0px no-repeat;
+	display: inline-block;
+}
+.cew-value-item:hover h2 span.knight{
+	background: url(images/chess.png) -157px -71px no-repeat;
+}
+.cew-value-item h2 span.bishop{
+	width: 30px;
+	height: 64px;
+	background: url(images/chess.png) -116px 0px no-repeat;
+	display: inline-block;
+}
+.cew-value-item:hover h2 span.bishop{
+	background: url(images/chess.png) -116px -71px no-repeat;
+}
+.cew-value-item p{
+	font-family: 'Signika', sans-serif;
+	line-height: 1;
+	font-size: 15px;
+	padding: 0 29px;
+	color: #fff;
 }
