@@ -534,26 +534,42 @@ hr.no-margin{
 .cew-value-item{
 	width: 343px;
 	height: 249px;
-	border-left:1px solid #000;
-	border-right:1px solid #000;
-	border-bottom:1px solid #000;
+	border-left:1px solid #dadada;
+	border-right:1px solid #dadada;
 	float: left;
 }
 .cew-value-item:nth-child(1){
-	background: red;
+	border-left:1px solid #ededed;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #dadada;
 }
 .cew-value-item:nth-child(2){
-	background: blue;
+	border-left:1px solid #dadada;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #dadada;
 }
 .cew-value-item:nth-child(3){
-	background: green;
+	border-left:1px solid #dadada;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #dadada;
 }
 .cew-value-item:nth-child(4){
-	background: black;
+	border-left:1px solid #ededed;
+	border-right:1px solid #ededed;
 }
 .cew-value-item:nth-child(5){
-	background: orange;
+	border-left:1px solid #dadada;
+	border-right:1px solid #ededed;
 }
 .cew-value-item:nth-child(6){
-	background: white;
+	border-left:1px solid #dadada;
+	border-right:1px solid #ededed;
+}
+.cew-value-item h1{
+	color: #e97500;
+	font-size: 56px;
+	font-family: 'nexa_boldregular';
+	line-height: 1;
+	text-align: center;
+	margin: 68px 0;
 }
