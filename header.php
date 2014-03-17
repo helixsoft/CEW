@@ -16,6 +16,7 @@
         <![endif]-->
     <script src="<?php echo THEMEROOT?>/js/jquery.min.js"></script>
     <script src="<?php echo THEMEROOT?>/js/modernizr.js"></script>
+    <script src="<?php echo THEMEROOT?>/js/jquery.gray.min.js"></script>
     <?php wp_head();?>
 </head>
 <body>

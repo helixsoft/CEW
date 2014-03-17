@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 			// Show that we're working.
 			$(this).text('Loading...');
 			
-			$('.more_posts_'+ pageNum).load(nextLink + ' .post',
+			$('.more_posts_'+ pageNum).load(nextLink + ' .'+postType,
 				function() {
 					// Update page number and nextLink.
 					$('.more_posts_'+ pageNum).addClass('animate');
