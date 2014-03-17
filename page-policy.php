@@ -65,11 +65,43 @@ get_header(); ?>
 	</div>
 	<div class="container">
 		<div class="sixteen columns">
+			<h1 class="cew-policy-title">CEW QUALITY POLICY</h1>
+			<p>CEW'S QUALITY POLICY is to make sure that our customers have the satisfaction that all the specific requirements of the contract will be met and thus they feel comfort during the works and for the future. </p>
+			<h3 class="cew-policy-achieved">This will be achieved through our approach to:</h3>
+			<nav class="cew-policy-nav">
+				<ul>
+					<li><span></span>Design, engineering and technology</li>
+					<li><span></span>Procurement </li>
+					<li><span></span>Project management</li>
+					<li><span></span>Construction and installation</li>
+					<li><span></span>Commissioning</li>
+				</ul>
+				<ul>
+					<li><span></span>Continuous improvement and training</li>
+					<li><span></span>Safety</li>
+					<li><span></span>Environmental considerations</li>
+					<li><span></span>Quality, commitment and value</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 	<hr/>
 	<div class="container">
 		<div class="sixteen columns">
+			<h2 class="cew-policy-title">OUR PURPOSE</h2>
+			<p>We provide multi-discipline engineering contracting service of :</p>
+			<nav class="cew-policy-nav-other">
+				<ul>
+					<li><span></span>Superior quality and value that creates</li>
+					<li><span></span>Safe, effective and comfortable living and working environments for people</li>
+				</ul>
+				<ul>
+					<li><span></span>Ideal operating conditions for specialized machinery, equipment and manufacturing Processes</li>
+				</ul>
+			</nav>
+			<p>As a result, our clients will reward us with leadership in income, profit and value creation, allowing our people and the communities in which we live and work to prosper. On the way to achieve our quality targets, our Quality Manual contains the guidelines of the system. We undertake to guarantee that all the employees have the necessary awareness and discipline to comply with the documentation, instructions and procedures established by this system</p>
+			<p>The Quality Management System has been designed to allow continuous revision and improvement as required</p>
+			<p>We are aware that the QUALITY IMPROVEMENT efforts towards this . Aim are indispensable for success that shall never end, and that we can approximate the Excellency with the contribution of all our employees</p>
 		</div>
 	</div>
 </section>
