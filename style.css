@@ -479,6 +479,7 @@ hr.no-margin{
 	color: #dadada;
 	margin-top: 24px;
 	text-transform: uppercase;
+	font-family: 'nexa_lightregular';
 }
 .certifi .item{
 	border-left: 1px solid #dadada;
@@ -839,4 +840,34 @@ article.project p{
 }
 .padding-top{
 	padding-top:34px; 
+}
+
+
+.service-filter h1{
+	font-family: 'tahomabold';
+	line-height: 1;
+	font-size: 30px;
+	color: #929292;
+}
+.service-filter h2{
+	font-family: 'tahomaregular';
+	line-height: 1;
+	font-size: 16px;
+	color: #929292;
+}
+
+#service-image .mix{
+	display: none;
+}
+.service-filter{
+	list-style: none;
+}
+.service-filter li{
+	width: 50px;
+	height: 50px;
+	float: left;
+	display: inline-block;
+}
+#air-conditioning-refrigeration-division{
+	background: url(images/service-icon.png) 0px 0px;
 }

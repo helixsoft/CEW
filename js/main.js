@@ -1,4 +1,14 @@
+// On document ready:
 
+$(function(){
+
+	// Instantiate MixItUp:
+
+	$('#service-image').mixItUp({
+	
+});
+
+});
 jQuery(document).ready(function($) {
 
 	var postType = fangohr_dynload.postType;

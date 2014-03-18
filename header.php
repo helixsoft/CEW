@@ -23,7 +23,7 @@
     <header>
         <div class="container">
             <div class="two columns">
-                <div class="logo"><a href="#"><img src="<?php echo IMAGES?>/logo.png"></a></div>
+                <div class="logo"><a href="<?php echo site_url();?>"><img src="<?php echo IMAGES?>/logo.png"></a></div>
             </div>
             <div class="fourteen columns ">
                 <div class="offset-by-nine five columns">
