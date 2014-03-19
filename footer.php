@@ -13,7 +13,7 @@
             </div>
         </footer>
          <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true&language=en"></script>
-         <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+         <script src="<?php echo THEMEROOT?>/js/owl.carousel.min.js"></script>
         <script src="<?php echo THEMEROOT?>/js/main.js"></script>
         <script type="text/javascript">
         jQuery(document).ready(function($) {

@@ -9,7 +9,11 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo THEMEROOT?>/css/base.css">
     <link rel="stylesheet" href="<?php echo THEMEROOT?>/css/skeleton.css">
-    <link rel="stylesheet" href="<?php echo THEMEROOT?>/css/layout.css">       
+    <link rel="stylesheet" href="<?php echo THEMEROOT?>/css/layout.css">
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="<?php echo THEMEROOT?>/css/owl.carousel.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="<?php echo THEMEROOT?>/css/owl.theme.css">       
     <link rel="stylesheet" href="<?php echo THEMEROOT?>/style.css" media="all">
     <!--[if lt IE 9]>
         <script src="<?php echo THEMEROOT?>/js/html5.js"></script>

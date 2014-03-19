@@ -18,6 +18,28 @@ $(function(){
 		$('.mix'+'#'+$(this).attr('id')).children('.text-container').addClass('active');
 	});
 });
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+ 	  navigation : true,
+ 	  pagination : false
+  });
+ 	$("#owl-demo1").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 	  navigation : false,
+ 	  pagination : false
+  });
+ 	$("#owl-demo2").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 	  navigation : false,
+ 	  pagination : false,
+ 	  singleItem : true
+  });
+});
 jQuery(document).ready(function($) {
 
 	var postType = fangohr_dynload.postType;
