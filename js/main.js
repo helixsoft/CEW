@@ -1,13 +1,22 @@
 // On document ready:
 
 $(function(){
-
-	// Instantiate MixItUp:
-
-	$('#service-image').mixItUp({
-	
-});
-
+	$(window).on('load', function() {
+		$('.mix'+'#'+$( ".service-filter" ).find( ".filter.active" ).attr('id')).css('opacity',1);
+		$('.mix'+'#'+$( ".service-filter" ).find( ".filter.active" ).attr('id')).children('img').removeClass('grayscale');
+		$('.mix'+'#'+$( ".service-filter" ).find( ".filter.active" ).attr('id')).children('.text-container').addClass('active');
+	});
+	$('.filter').on('click',function(){
+		$('.filter-title').html($(this).attr('title'));
+		$('.filter').removeClass('active');
+		$(this).addClass('active');
+		$('.mix').css('opacity',0.6);
+		$('.mix').children('img').addClass('grayscale');
+		$('.mix'+'#'+$(this).attr('id')).css('opacity',1);
+		$('.mix'+'#'+$(this).attr('id')).children('img').removeClass('grayscale');
+		$('.mix').children('.text-container').removeClass('active');
+		$('.mix'+'#'+$(this).attr('id')).children('.text-container').addClass('active');
+	});
 });
 jQuery(document).ready(function($) {
 

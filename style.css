@@ -855,19 +855,192 @@ article.project p{
 	font-size: 16px;
 	color: #929292;
 }
-
-#service-image .mix{
-	display: none;
+.service-filter p{
+	padding-right:20px; 
+}
+.filter-images{
+	width: 726px;
+	float:left;
 }
 .service-filter{
 	list-style: none;
 }
 .service-filter li{
-	width: 50px;
+	width: 51px;
 	height: 50px;
 	float: left;
 	display: inline-block;
+	cursor: pointer;
 }
-#air-conditioning-refrigeration-division{
-	background: url(images/service-icon.png) 0px 0px;
+.filter#air-conditioning-refrigeration-division{
+	background: url(images/service-icons.png) -25px -53px;
+}
+.filter#air-conditioning-refrigeration-division:hover{
+	background: #e8e8e8 url(images/service-icons.png) -25px -149px;
+}
+.filter.active#air-conditioning-refrigeration-division{
+	background: #e8e8e8 url(images/service-icons.png) -25px -149px;
+}
+.filter#electrical-division{
+	background: url(images/service-icons.png) -167px -53px;
+}
+.filter#electrical-division:hover{
+	background: #e8e8e8 url(images/service-icons.png) -167px -149px;
+}
+.filter.active#electrical-division{
+	background: #e8e8e8 url(images/service-icons.png) -167px -149px;
+}
+.filter#fire-alarm-system-fire-fighting-system{
+	background: url(images/service-icons.png) -311px -53px;
+}
+.filter#fire-alarm-system-fire-fighting-system:hover{
+	background: #e8e8e8 url(images/service-icons.png) -311px -149px;
+}
+.filter.active#fire-alarm-system-fire-fighting-system{
+	background: #e8e8e8 url(images/service-icons.png) -311px -149px;
+}
+.filter#maintenance-division{
+	background: url(images/service-icons.png)  -383px -53px;
+}
+.filter#maintenance-division:hover{
+	background: #e8e8e8 url(images/service-icons.png) -383px -149px;
+}
+.filter.active#maintenance-division{
+	background: #e8e8e8 url(images/service-icons.png) -383px -149px;
+}
+.filter#plumbing-sanitary-division{
+	background:  url(images/service-icons.png) -96px -53px;
+}
+.filter#plumbing-sanitary-division:hover{
+	background: #e8e8e8 url(images/service-icons.png) -96px -149px;
+}
+.filter.active#plumbing-sanitary-division{
+	background: #e8e8e8 url(images/service-icons.png) -96px -149px;
+}
+.filter#security-system-division{
+	background: url(images/service-icons.png) -239px -53px;
+}
+.filter#security-system-division:hover{
+	background: #e8e8e8 url(images/service-icons.png) -239px -149px;
+}
+.filter.active#security-system-division{
+	background: #e8e8e8 url(images/service-icons.png) -239px -149px;
+}
+.filter-images .mix{
+	float: left;
+	height: 242px;
+	position: relative;
+	opacity: 0.6;
+}
+.filter-images .mix .text-container{
+	position: relative;
+	left: 0px;
+	top:0px;
+	width: 242px;
+	height: 242px;
+	background-color: #609de0;
+	opacity: 0;
+	z-index: 2;
+}
+.filter-images .mix:nth-child(-n+4) .text-container{
+	left: 0px;
+	top:-242px;
+	-webkit-transition : all 1s ease-out; 
+	  -moz-transition : all 1s ease-out;
+	  -o-transition : all 1s ease-out;  
+	  transition : all 1s ease-out;
+}
+.filter-images .mix:nth-child(-n+4) .text-container.active{
+	left: 0px;
+	top:-2px;
+	opacity: 1;
+}
+.filter-images .mix:nth-child(n+4) .text-container{
+	left: 0px;
+	top:-242px;
+	-webkit-transition : all 1s ease-out; 
+	  -moz-transition : all 1s ease-out;
+	  -o-transition : all 1s ease-out;  
+	  transition : all 1s ease-out;
+}
+.filter-images .mix:nth-child(n+4) .text-container.active{
+	left: 0px;
+	top:-486px;
+	opacity: 1;
+}
+
+.filter-images .mix:nth-child(-n+4) .text-container.active .arrow{
+	width: 24px;
+	height: 9px;
+	position: absolute;
+	left: 10px;
+	top: -9px;
+	display: inline-block;
+	background: url(images/up-down-arrow.png) 0px 0px;
+}
+.filter-images .mix:nth-child(n+4) .text-container.active .arrow{
+	width: 24px;
+	height: 9px;
+	position: absolute;
+	left: 10px;
+	top: 242px;
+	display: inline-block;
+	background: url(images/up-down-arrow.png) -24px 0px;
+}
+.filter-images .mix .text-container .service-title{
+	width: 100%;
+	height: auto;
+}
+.filter-images .mix .text-container .service-title h1{
+	line-height: 1;
+	 font-family: 'nexa_boldregular';
+	 font-size: 16px;
+	 color: #95bbe9;
+	 width: 172px;
+	 padding-left:10px;
+	 padding-top: 10px;
+	 float: left;
+}
+.filter-images .mix .text-container .service-title .icon{
+	width: 51px;
+	height: 50px;
+	float: left;
+}
+.filter-images .mix .text-container .service-title .icon#air-conditioning-refrigeration-division{
+	background: url(images/service-icons-light.png) -29px -113px;
+}
+.filter-images .mix .text-container .service-title .icon#plumbing-sanitary-division{
+	background: url(images/service-icons-light.png) -107px -113px;
+}
+.filter-images .mix .text-container .service-title .icon#electrical-division{
+	background: url(images/service-icons-light.png) -178px -113px;
+}
+.filter-images .mix .text-container .service-title .icon#security-system-division{
+	background: url(images/service-icons-light.png) -249px -113px;
+}
+.filter-images .mix .text-container .service-title .icon#fire-alarm-system-fire-fighting-system{
+	background: url(images/service-icons-light.png) -323px -113px;
+}
+.filter-images .mix .text-container .service-title .icon#maintenance-division{
+	background: url(images/service-icons-light.png) -388px -113px;
+}
+.filter-images .mix .text-container .service-excert p{
+	padding: 0 10px;
+	font-size: 11px;
+	font-family: 'tahomaregular';
+	line-height: 1;
+	color: #fff;
+}
+.filter-images .mix .text-container .service-excert ul{
+	list-style-type: disc;
+}
+.filter-images .mix .text-container .service-excert ul li{
+	font-size: 11px;
+	font-family: 'tahomaregular';
+	line-height: 1;
+	color: #fff;
+	width: 222px;
+	padding: 0 10px;
+	height: auto;
+	float: none;	
 }
