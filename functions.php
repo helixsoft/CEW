@@ -21,7 +21,9 @@ function CEW_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 
-
+	register_nav_menu( 'primary', __( 'Navigation Menu', 'CEW' ) );
+	register_nav_menu( 'top-nav', __( 'Top Menu', 'CEW' ) );
+	register_nav_menu( 'footer-nav', __( 'Footer Menu', 'CEW' ) );
 	add_theme_support( 'post-thumbnails' );
 }
 

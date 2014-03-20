@@ -13,39 +13,21 @@ get_header(); ?>
 <section>
 	<div class="container">
 		<div class="sixteen columns">
-			<h6 class="contact-cew-title">Commitment Engineering Works.</h6>
+			<h6 class="contact-cew-title"><?php echo get_field('contact_cew_title') ;?></h6>
 			<div class="contact-cew-desc"><?php the_content();?></div>
 			<div class="contact-area">
-				<div class="contact-item">
-					<div class="contact-item-title">Location</div>
-					<div class="contact-item-detail">Doha - Qatar</div>
-				</div>
-				<div class="contact-item">
-					<div class="contact-item-title">Address</div>
-					<div class="contact-item-detail">P. O Box 1332</div>
-				</div>
-				<div class="contact-item">
-					<div class="contact-item-title">Main Office</div>
-					<div class="contact-item-detail">+974 435 7497</div>
-					<div class="contact-item-detail">+974 431 8376</div>
-				</div>
-				<div class="contact-item">
-					<div class="contact-item-title">Workshop</div>
-					<div class="contact-item-detail">+974 460 4505</div>
-				</div>
-				<hr class="no-margin" />
-				<div class="contact-item">
-					<div class="contact-item-title">Showroom</div>
-					<div class="contact-item-detail">+974 450 4843</div>
-				</div>
-				<div class="contact-item">
-					<div class="contact-item-title">Fax</div>
-					<div class="contact-item-detail">+974 442 6816</div>
-				</div>
-				<div class="contact-item">
-					<div class="contact-item-title">Email</div>
-					<div class="contact-item-detail">cew@qatar.net.qa</div>
-				</div>
+				<?php $rows = get_field('contact_area'); ?>
+				<?php if($rows) { $k=0;?>
+					<?php foreach($rows as $row){ ?>
+						<div class="contact-item">
+							<div class="contact-item-title"><?php echo $row['contact_title'] ?></div>
+							<div class="contact-item-detail"><?php echo $row['contact_detail'] ?></div>
+						</div>
+						<?php if($k==3){ ?>
+						<hr class="no-margin" />
+						<?php } ?>
+					<?php $k++;} ?>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
@@ -75,7 +57,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<?php endwhile;endif; ?>
+
 <script type='text/javascript'>
 	/* <![CDATA[ */
 	var fangohr_dynload = {"postType":"post","startPage":"1","maxPages":"<?php echo $wp_query->max_num_pages;;?>","nextLink":"<?php echo get_vogaye_next_link(get_next_posts_link( ''));?>","startPostPage":"1","nextPostPageLink":"<?php echo $first_post?>"};
@@ -84,7 +66,7 @@ get_header(); ?>
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
                      
-                  var position     = [25.28100,51.53991];
+                  var position     = [<?php echo get_field('latitude') ;?>,<?php echo get_field('longitude') ;?>];
                   var marker_url   = "<?php echo IMAGES?>/marker.png";
                   var marker_w     = 169;
                   var marker_h     = 206;
@@ -146,4 +128,5 @@ get_header(); ?>
 
       }
 	</script>
+<?php endwhile;endif; ?>
 <?php get_footer();?>

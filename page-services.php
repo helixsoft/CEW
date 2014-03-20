@@ -58,26 +58,25 @@ get_header(); ?>
 	<div class="page_mid_name">
     	<div class="container"><div class="sixteen columns"><h1>BRANCHES</h1></div></div>
 	</div>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="container">
 		<div class="sixteen columns certifi">
-			<div class="four columns item alpha omega">
-				<h1 class="line">SHOWROOM</h1>
-				<p>Certified by KAHRAMAA as a Grade “A” Electrical contractor, doing all the Electromechanical works. </p>
-			</div>
-			<div class="four columns item alpha omega">
-				<h1 class="line">Q-TEL LICENSE</h1>
-				<p>Licensed by Q-tel for dealing in the field of Telecommunication (i.e: DTH, Satellite Dish, Satellite LNB ect…) </p>
-			</div>
-			<div class="four columns item alpha omega">
-				<h1>ALCAD ACKOWLEDGEMENT</h1>
-				<p>ALCAD have been ackowledge us as the distributors in Qatar for all ALCAD products such as SMATV and Audio/Video Door Phone system, Central Satellite System etc… </p>
-			</div>
-			<div class="four columns item alpha omega">
-				<h1>CALIBRATION CERTIFICATE</h1>
-				<p>Ministry of Environment Central Laboratories Department have been certified us to calibrate the weights for company plants.</p>
-			</div>
+			<?php $rows = get_field('branches'); ?>
+			<?php if($rows) { $k=0;?>
+				<?php foreach($rows as $row){ ?>
+				<div class="four columns item alpha omega">
+					<?php if($k<2) { ?>
+					<h1 class="line"><?php echo $row['certification_title']; ?></h1>
+					<?php }else{ ?>
+					<h1><?php echo $row['certification_title']; ?></h1>
+					<?php } ?>
+					<p><?php echo $row['certification_text']; ?></p>
+				</div>
+				<?php $k++;} ?>
+			<?php } ?>
 		</div>
 	</div>
+	<?php endwhile;endif; ?>
 </section>
 <script type='text/javascript'>
 	/* <![CDATA[ */

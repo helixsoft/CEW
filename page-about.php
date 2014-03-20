@@ -13,14 +13,18 @@ get_header(); ?>
 <section>
 	<div class="container">
 		<div class="sixteen columns">
-			<h6 class="about-cew-title">Commitment Engineering Works.</h6>
+			<h6 class="about-cew-title"><?php echo get_field('about_cew_title') ;?></h6>
 			<div class="about-cew-desc"><?php the_content()?></div>
 			<a class="button" href="<?php echo site_url('/contact/')?>">Contact us</a>
 			<hr/>
 			<h6 class="about-cew-division-title">Our Divisions</h6>
 			<nav class="about">
-				<li><span></span><a href="#">MEP Division</a></li>
-				<li><span></span><a href="#">Instrumentation & Industrial Maintenance Division</a></li>
+				<?php $rows = get_field('our_divisions'); ?>
+				<?php if($rows) { ?>
+					<?php foreach($rows as $row){ ?>
+						<li><span></span><a href="<?php echo $row['our_divisions_link'] ?>" title="<?php echo $row['our_divisions_text'] ?>"><?php echo $row['our_divisions_text'] ?></a></li>
+					<?php } ?>
+				<?php } ?>
 			</nav>
 		</div>
 	</div>
@@ -29,22 +33,19 @@ get_header(); ?>
 	</div>
 	<div class="container">
 		<div class="sixteen columns certifi">
-			<div class="four columns item alpha omega">
-				<h1 class="line">SHOWROOM</h1>
-				<p>Certified by KAHRAMAA as a Grade “A” Electrical contractor, doing all the Electromechanical works. </p>
-			</div>
-			<div class="four columns item alpha omega">
-				<h1 class="line">Q-TEL LICENSE</h1>
-				<p>Licensed by Q-tel for dealing in the field of Telecommunication (i.e: DTH, Satellite Dish, Satellite LNB ect…) </p>
-			</div>
-			<div class="four columns item alpha omega">
-				<h1>ALCAD ACKOWLEDGEMENT</h1>
-				<p>Ministry of Environment Central Laboratories Department have been certified us to calibrate the weights for company plants.</p>
-			</div>
-			<div class="four columns item alpha omega">
-				<h1>CALIBRATION CERTIFICATE</h1>
-				<p>ALCAD have been ackowledge us as the distributors in Qatar for all ALCAD products such as SMATV and Audio/Video Door Phone system, Central Satellite System etc… </p>
-			</div>
+			<?php $rows = get_field('certification'); ?>
+			<?php if($rows) { $k=0;?>
+				<?php foreach($rows as $row){ ?>
+				<div class="four columns item alpha omega">
+					<?php if($k<2) { ?>
+					<h1 class="line"><?php echo $row['certification_title']; ?></h1>
+					<?php }else{ ?>
+					<h1><?php echo $row['certification_title']; ?></h1>
+					<?php } ?>
+					<p><?php echo $row['certification_text']; ?></p>
+				</div>
+				<?php $k++;} ?>
+			<?php } ?>
 		</div>
 	</div>
 </section>

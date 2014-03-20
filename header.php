@@ -32,22 +32,11 @@
             </div>
             <div class="fourteen columns ">
                 <div class="offset-by-nine five columns">
-                    <nav class="top_nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Industry News</a></li>
-                        <li><a href="#">Policy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </nav>
+                    <?php wp_nav_menu( array( 'theme_location' => 'top-nav','container' => 'nav','container_class' => 'top_nav')); ?>                    
                 </div>
-                <hr/>
+                <hr class="no-margin"/>
                 <div class="offset-by-eight six columns">
-                    <nav class="main_nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </nav>
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary','container' => 'nav','container_class' => 'main_nav' )); ?>
                 </div>
             </div>
         </div>

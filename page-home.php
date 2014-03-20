@@ -11,11 +11,8 @@ get_header(); ?>
 	<img src="<?php the_field('home_image'); ?>">
 	<div class="container image-text">
 		<div class="sixteen columns">
-			<h1>Lorem ipsum</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitullamcorper enim, tempus porttitor Lorem ipsum dolor sit amet,consectetur adipiscing elitullam corper enim, 
-			tempus porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
- 			elitullamcorper enim, tempus 
-			porttitor</p>
+			<h1><?php echo get_field('home_image_title'); ?></h1>
+			<p><?php echo get_field('home_image_desc');?></p>
 		</div>
 	</div>
 </div>
@@ -127,7 +124,6 @@ get_header(); ?>
     <a href="<?php echo site_url('/contact/') ?>" class="home-contact-readmore">Get in touch</a>
   </div>
 </div>
-<?php endwhile;endif; ?>
 <script type='text/javascript'>
 	/* <![CDATA[ */
 	var fangohr_dynload = {"postType":"post","startPage":"1","maxPages":"<?php echo $wp_query->max_num_pages;;?>","nextLink":"<?php echo get_vogaye_next_link(get_next_posts_link( ''));?>","startPostPage":"1","nextPostPageLink":"<?php echo $first_post?>"};
@@ -136,7 +132,7 @@ get_header(); ?>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
                      
-                  var position     = [25.28100,51.53991];
+                  var position     = [<?php echo get_field('latitude') ;?>,<?php echo get_field('longitude') ;?>];
                   var marker_url   = "<?php echo IMAGES?>/marker.png";
                   var marker_w     = 169;
                   var marker_h     = 206;
@@ -198,4 +194,5 @@ get_header(); ?>
 
       }
 	</script>
+  <?php endwhile;endif; ?>
 <?php get_footer();?>
