@@ -63,3 +63,26 @@ function the_excerpt_max_charlength($charlength) {
 		echo $excerpt;
 	}
 }
+if ( ! function_exists( 'CEW_post_nav' ) ) :
+/**
+ * Displays navigation to next/previous post when applicable.
+*/
+function CEW_post_nav() {
+	global $post;
+
+	// Don't print empty markup if there's nowhere to navigate.
+	$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
+	$next     = get_adjacent_post( false, '', false );
+
+	if ( ! $next && ! $previous )
+		return;
+	?>
+    <div class="nav-previous">
+        <?php previous_post_link( '%link', _x('Previous Post','test1','VoyageTravel' ) ); ?>
+    </div>
+    <div class="nav-next">
+        <?php next_post_link( '%link', _x( 'Next Post','test2','VoyageTravel' ) ); ?>
+    </div> 
+	<?php
+}
+endif;

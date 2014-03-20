@@ -4,9 +4,17 @@
  *
  */
 get_header();?>
-<section>
 <?php $i=0;$first_post=""; if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php if($i==0){$first_post=get_permalink();$i++;} ?>
+<div class="page_name">
+    <div class="container">
+      <div class="sixteen columns">
+        <h1>NEWS TITLE</h1>
+        <?php CEW_post_nav();?>
+      </div>
+    </div>
+</div>
+<section>
 <article <?php post_class('blog'); ?> id="post-<?php the_ID(); ?>">
 	<div class="container">
 		 <div class="sixteen columns ">
