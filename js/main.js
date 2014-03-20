@@ -34,8 +34,8 @@ $(document).ready(function() {
  	  pagination : false
   });
  	$("#owl-demo2").owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 	  navigation : false,
+      //autoPlay: 6000, //Set AutoPlay to 3 seconds
+ 	  navigation : true,
  	  pagination : false,
  	  singleItem : true
   });

@@ -29,7 +29,6 @@ get_header(); ?>
 				<p><?php the_field('consultant'); ?></p>
 				<h6>Year</h6>
 				<p><?php the_field('year'); ?></p>
-				<button class="view-gallery">View Gallary</button>
 			</div>
 			<div class="ten columns">
 				<div class="image-container project">

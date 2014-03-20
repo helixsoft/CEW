@@ -63,7 +63,21 @@ hr{
 	height: 89px;
 	background: #f8f8f8;
 	border-bottom: 1px solid #dadada;
+	position: relative;
 	
+}
+.page_name .arrow{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	top: 24px;
+	right: 0;
+	border-radius: 50%;
+	background: url(images/icons.png) -184px -342px;
+}
+.page_name .arrow:hover{
+	background: url(images/icons.png) -380px -338px;
 }
 .page_name h1{
 	font-size: 50px;
@@ -869,7 +883,6 @@ article.project p{
 	width: 51px;
 	height: 50px;
 	float: left;
-	display: inline-block;
 	cursor: pointer;
 }
 .filter#air-conditioning-refrigeration-division{
@@ -1032,15 +1045,15 @@ article.project p{
 	color: #fff;
 }
 .filter-images .mix .text-container .service-excert ul{
-	list-style-type: disc;
+	margin-right: 10px;
 }
-.filter-images .mix .text-container .service-excert ul li{
+.filter-images .mix .text-container .service-excert li{
 	font-size: 11px;
 	font-family: 'tahomaregular';
 	line-height: 1;
 	color: #fff;
-	width: 222px;
-	padding: 0 10px;
+	width: 190px;
+	padding-right: 10px;
 	height: auto;
 	float: none;	
 }
@@ -1087,34 +1100,286 @@ article.project p{
 #owl-demo .item img{
   display: block;
 }
+#owl-demo .owl-controls .owl-buttons{
+	position: absolute;
+	top:8px;
+}
 #owl-demo .owl-controls .owl-buttons div.owl-prev{
     position: relative;
-    left: -560px;
-    top: -160px;
+    width: 14px;
+    height: 25px;
+    left: -80px;
     background-color:#fff; 
-    background: transparent url(images/gui/carousel_nav.png) no-repeat 0 0;
-    background-position: 0 0;
+    background: transparent url(images/icons.png) no-repeat 0 0;
+    background-position: -496px -345px;
     text-indent: -9999px;
     opacity: 1;
 }
+#owl-demo .owl-controls .owl-buttons div.owl-prev:hover{
+    background-position: -624px -345px;
+}
 #owl-demo .owl-controls .owl-buttons div.owl-next{
     position: relative;
-    right: -560px;
-    top: -160px;
+     width: 14px;
+    height: 25px;
+    right: -895px;
      background-color:#fff; 
-     background: transparent url(images/gui/carousel_nav.png) no-repeat 0 0;
-     background-position: -19px 0;
+     background: transparent url(images/icons.png) no-repeat 0 0;
+      background-position: -548px -345px;
      text-indent: -9999px;
      opacity: 1;
 }
+#owl-demo .owl-controls .owl-buttons div.owl-next:hover{
+    background-position: -676px -345px;
+}
+#owl-demo2 .owl-controls .owl-buttons{
+	position: absolute;
+	top: 0px;
+	left: 180px;
+}
+#owl-demo2 .owl-controls .owl-buttons div.owl-prev{
+    position: relative;
+    width: 14px;
+    height: 25px;
+    background-color:#fff; 
+    background: transparent url(images/icons.png) no-repeat 0 0;
+    background-position: -496px -345px;
+    text-indent: -9999px;
+    opacity: 1;
+}
+#owl-demo2 .owl-controls .owl-buttons div.owl-prev:hover{
+    background-position: -624px -345px;
+}
+#owl-demo2 .owl-controls .owl-buttons div.owl-next{
+    position: relative;
+     width: 14px;
+    height: 25px;
+     background-color:#fff; 
+     background: transparent url(images/icons.png) no-repeat 0 0;
+      background-position: -548px -345px;
+     text-indent: -9999px;
+     opacity: 1;
+}
+#owl-demo2 .owl-controls .owl-buttons div.owl-next:hover{
+    background-position: -676px -345px;
+}
 .project-slider,.news-slider{
 	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	background: #fff;
 }
 
 #owl-demo1 .item img{
   display: block;
   width: 100%;
   height: 141px;
+}
+
+.home-blog-title{
+	margin-top: 48px;
+}
+.home-blog-title a{
+	text-decoration: none;
+}
+.home-blog-title a h1{
+	margin: 0;
+	line-height: 1;
+	font-size: 26px;
+	font-family: 'nexa_boldregular';
+}
+.home-blog-author{
+	margin-top: 8px;
+	color: #171717;
+	font-size: 12px;
+	font-family: 'tahomaregular';
+}
+.home-blog-author span{
+	margin-right: 5px;
+}
+.home-blog-date{
+	margin-top: 0px;
+	color: #171717;
+	font-size: 12px;
+	font-family: 'tahomaregular';
+}
+.home-blog-excerpt{
+	margin-top: 18px;
+	font-size: 18px;
+	color: #171717;
+	font-family: 'nexa_lightregular';
+}
+.home-readmore{
+	width: 242px;
+	height: 38px;
+	text-decoration: none;
+	display: block;
+	border-radius: 10px;
+	border:1px solid #eeeeee;
+	text-align: center;
+	line-height: 38px;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: #fff;
+	-webkit-transition : all 500ms ease-out; 
+  -moz-transition : all 500ms ease-out;
+  -o-transition : all 500ms ease-out;  
+  transition : all 500ms ease-out;
+}
+.home-readmore:hover{
+	background: #609de0;
+	color: #fff;
+}
+.home-contact-readmore{
+	width: 200px;
+	height: 38px;
+	text-decoration: none;
+	display: block;
+	border-radius: 10px;
+	border:1px solid #eeeeee;
+	text-align: center;
+	line-height: 38px;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: #fff;
+	float: right;
+	-webkit-transition : all 500ms ease-out; 
+  -moz-transition : all 500ms ease-out;
+  -o-transition : all 500ms ease-out;  
+  transition : all 500ms ease-out;
+}
+.home-contact-readmore:hover{
+	background: #609de0;
+	color: #fff;
+}
+.border-top{
+	border-bottom: none;
+	border-top: 1px solid #dadada;
+}
+.service-box .items{
+	position: relative;
+	width: 344px;
+	height: 289px;
+	float: left;
+	background: #fff;
+}
+.service-box .items:nth-child(3n+2){
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+}
+.service-box .items:nth-child(-n+3){
+	border-bottom: 1px solid #dadada;
+}
+
+.service-box .items h1{
+	color: #505052;
+	font-size: 24.5px;
+	line-height: 1;
+	text-align: center;
+	padding: 0 40px;
+	margin-top: 50px;
+	height: 50px;
+}
+.service-box .items .icon-container{
+	width: 100%;
+	height: 129px;
+	position: relative;
+	bottom: 0;
+	padding: 23px 0;
+}
+.service-box .items .icon-container .text-container{
+	width: 100%;
+	height: 175px;
+	position: absolute;
+	top:176px;
+	left: 0;
+	background: rgba(96,157,224,0.8);
+	-webkit-transition : all 500ms ease-out; 
+	  -moz-transition : all 500ms ease-out;
+	  -o-transition : all 500ms ease-out;  
+	  transition : all 500ms ease-out;
+}
+.service-box .items .icon-container .icon{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: block;
+	margin: 0px auto;
+}
+.service-box .items:hover .icon-container .text-container{
+	top:0px;
+}
+.service-box .items .icon-container .icon#air-conditioning-refrigeration-division{
+	background: url(images/icons.png) -252px -173px;
+}
+.service-box .items:hover .icon-container .icon#air-conditioning-refrigeration-division{
+	background: url(images/icons.png) -252px -16px;
+}
+.service-box .items .icon-container .icon#plumbing-sanitary-division{
+	background:  url(images/icons.png) -54px -173px;
+}
+.service-box .items:hover .icon-container .icon#plumbing-sanitary-division{
+	background:  url(images/icons.png) -54px -16px;
+}
+.service-box .items .icon-container .icon#electrical-division{
+	background: url(images/icons.png) -945px -171px;
+}
+.service-box .items:hover .icon-container .icon#electrical-division{
+	background: url(images/icons.png) -947px -14px;
+}
+.service-box .items .icon-container .icon#security-system-division{
+	background: url(images/icons.png) -446px -173px;
+}
+.service-box .items:hover .icon-container .icon#security-system-division{
+	background: url(images/icons.png) -446px -16px;
+}
+.service-box .items .icon-container .icon#fire-alarm-system-fire-fighting-system{
+	background: url(images/icons.png) -607px -171px;
+}
+.service-box .items:hover .icon-container .icon#fire-alarm-system-fire-fighting-system{
+	background: url(images/icons.png) -607px -14px;
+}
+.service-box .items .icon-container .icon#maintenance-division{
+	background: url(images/icons.png)  -769px -173px;
+}
+.service-box .items:hover .icon-container .icon#maintenance-division{
+	background: url(images/icons.png)  -769px -16px;
+}
+
+.service-box .items .icon-container .text-container p{
+	padding: 0 10px;
+	font-size: 14px;
+	font-family: 'tahomaregular';
+	line-height: 1;
+	color: #fff;
+	margin-top: 20px;
+}
+.service-box .items .icon-container .text-container ul{
+	margin-right: 10px;
+	margin-top: 20px;
+}
+.service-box .items .icon-container .text-container li{
+	font-size: 14px;
+	font-family: 'tahomaregular';
+	line-height: 1;
+	color: #fff;
+	width: 240px;
+	padding-right: 10px;
+	height: auto;
+	float: none;	
+}
+.home-contact-title{
+	font-size: 22px;
+	line-height: 1;
+	font-family: 'nexa_boldregular';
+	color: #383838;
+	margin-top: 20px;
+}
+.home-contact-title{
+	font-size: 19px;
+	line-height: 1;
+	font-family: 'tahomaregular';
 }
