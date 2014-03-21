@@ -25,11 +25,19 @@ $(document).ready(function() {
       autoPlay: 3000, //Set AutoPlay to 3 seconds
  
       items : 4,
+      itemsDesktopSmall : [980,3],
+	    itemsTablet: [768,2],
+	    itemsTabletSmall: false,
+    itemsMobile : [479,1],
  	  navigation : true,
  	  pagination : false
   });
  	$("#owl-demo1").owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds
+      itemsDesktopSmall : [980,3],
+	    itemsTablet: [768,2],
+	    itemsTabletSmall: false,
+    itemsMobile : [479,1],
  	  navigation : false,
  	  pagination : false
   });
